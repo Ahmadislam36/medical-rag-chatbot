@@ -1,0 +1,122 @@
+# 🏥 Medical RAG Chatbot (LangChain + FREE LLM)
+
+## 📌 Project Overview
+
+This project is a **Medical RAG (Retrieval-Augmented Generation) Chatbot** that provides medical information based on a structured dataset.
+
+The system retrieves relevant medical knowledge and generates responses using a **local LLM (Ollama)** — completely **free and offline**.
+
+---
+
+## 🚀 Features
+
+* 🔍 Context-based medical question answering (RAG)
+* 🧠 Uses **LangChain** for pipeline management
+* 📦 Vector database using **FAISS**
+* 🤖 Local LLM using **Ollama (Llama3:8b)**
+* 🖥️ Simple UI with **Streamlit**
+* ⚠️ Includes safety responses (doctor recommendation)
+
+---
+
+## 🧠 How It Works
+
+1. User asks a question
+2. Text is converted into embeddings
+3. FAISS retrieves relevant medical data
+4. Context is sent to LLM (Ollama:8b)
+5. LLM generates final answer
+
+---
+
+## 🛠️ Tech Stack
+
+* Python
+* LangChain
+* FAISS
+* Sentence Transformers
+* Streamlit
+* Ollama (Llama3:8b - Local Model)
+
+---
+
+## 📁 Project Structure
+
+```
+medical-rag-chatbot/
+│
+├── app.py                # Streamlit UI
+├── rag_pipeline.py       # RAG logic
+├── data/
+│   └── medical.txt       # Medical dataset
+│
+├── vectorstore/          # Saved embeddings
+└── requirements.txt
+```
+
+---
+
+## ⚙️ Installation
+
+
+### 1. Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### 2. Install Ollama
+
+Download from: https://ollama.com/download
+
+---
+
+## ▶️ Run the Project
+
+### Step 1: Start LLM
+
+```
+ollama run llama3:8b
+```
+
+### Step 2: Run app
+
+```
+streamlit run app.py
+```
+
+---
+
+## 🧪 Example Queries
+
+* "I have fever what should I do?"
+* "Symptoms of diabetes?"
+* "When is cough dangerous?"
+* "What is stroke?"
+
+---
+
+## ⚠️ Disclaimer
+
+This chatbot provides **general medical information only**.
+It is not a substitute for professional medical advice.
+Always consult a qualified doctor for serious conditions.
+
+---
+
+## 🎯 Future Improvements
+
+* 📄 PDF upload support
+* 💬 Chat history (memory)
+* ⚡ FastAPI backend
+* 🌐 Deployment (web hosting)
+* 🧠 Improved retrieval (reranking)
+
+---
+
+## 👨‍💻 Author
+
+Ahmad
+AI/ML Engineer
+
+---
