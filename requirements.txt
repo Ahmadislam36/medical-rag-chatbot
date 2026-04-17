@@ -5,3 +5,4 @@ sentence-transformers
 streamlit
 pypdf
 ollama
+langchain-ollama
