@@ -65,7 +65,7 @@ db = load_db()
 # =========================
 @st.cache_resource
 def load_model():
-    return genai.GenerativeModel("gemini-2.5-flash")
+    return genai.GenerativeModel("Gemini 2.5 Flash-Lite")
 
 model = load_model()
 
