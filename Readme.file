@@ -1,42 +1,39 @@
-# 🏥 Medical RAG Chatbot (LangChain + FREE LLM)
+# 🏥 Medical RAG Chatbot (LangChain + Gemini AI)
 
 ## 📌 Project Overview
 
 This project is a **Medical RAG (Retrieval-Augmented Generation) Chatbot** that provides medical information based on a structured dataset.
-
-The system retrieves relevant medical knowledge and generates responses using a **local LLM (Ollama)** — completely **free and offline**.
+It retrieves relevant medical context using a vector database and generates human-like responses using **Gemini 2.5 Flash**.
 
 ---
-
 ## 🚀 Features
 
-* 🔍 Context-based medical question answering (RAG)
-* 🧠 Uses **LangChain** for pipeline management
-* 📦 Vector database using **FAISS**
-* 🤖 Local LLM using **Ollama (Llama3:8b)**
-* 🖥️ Simple UI with **Streamlit**
-* ⚠️ Includes safety responses (doctor recommendation)
-
+* 🔍 Context-aware medical Q&A using RAG
+* 🧠 LangChain-based pipeline
+* 📦 FAISS vector database for fast retrieval
+* 🤖 Google Gemini AI (free tier supported)
+* 🖥️ Streamlit web interface
+* ⚠️ Medical safety prompts included
+* ⚡ Fast and lightweight architecture
 ---
 
 ## 🧠 How It Works
 
-1. User asks a question
-2. Text is converted into embeddings
-3. FAISS retrieves relevant medical data
-4. Context is sent to LLM (Ollama:8b)
-5. LLM generates final answer
-
+1. User enters a medical question
+2. Question is converted into embeddings
+3. FAISS retrieves relevant medical context
+4. Context + question is sent to Gemini AI
+5. Gemini generates a natural, human-like response
 ---
-
 ## 🛠️ Tech Stack
 
-* Python
-* LangChain
-* FAISS
-* Sentence Transformers
+* Python 🐍
 * Streamlit
-* Ollama (Llama3:8b - Local Model)
+* LangChain
+* FAISS (Vector Database)
+* HuggingFace Embeddings
+* Google Generative AI (Gemini 2.5 Flash)
+* Python-dotenv
 
 ---
 
@@ -52,6 +49,8 @@ medical-rag-chatbot/
 │
 ├── vectorstore/          # Saved embeddings
 └── requirements.txt
+├── README.file          # Saved embeddings
+└── .env
 ```
 
 ---
@@ -65,18 +64,12 @@ medical-rag-chatbot/
 pip install -r requirements.txt
 ```
 
-### 2. Install Ollama
-
-Download from: https://ollama.com/download
-
----
-
 ## ▶️ Run the Project
 
 ### Step 1: Start LLM
 
 ```
-ollama run llama3:8b
+Gemini 2.5 Flash
 ```
 
 ### Step 2: Run app
