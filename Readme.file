@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 
 This project is a **Medical RAG (Retrieval-Augmented Generation) Chatbot** that provides medical information based on a structured dataset.
-It retrieves relevant medical context using a vector database and generates human-like responses using **Gemini 2.5 Flash**.
+It retrieves relevant medical context using a vector database and generates human-like responses using **gemini-flash-lite-latest**.
 
 There are 20 diseases/conditions in the list.
 Fever
@@ -55,7 +55,7 @@ make sure question about those diseases which are mention.
 * LangChain
 * FAISS (Vector Database)
 * HuggingFace Embeddings
-* Google Generative AI (Gemini 2.5 Flash)
+* Google Generative AI (gemini-flash-lite-latest)
 * Python-dotenv
 
 ---
