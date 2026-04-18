@@ -1,8 +1,21 @@
+
+# Web Interface
+streamlit
+
+# LangChain Core
 langchain
 langchain-community
+langchain-text-splitters
+langchain-google-genai
+
+# Google Gemini SDK
+google-generativeai
+
+# Vector DB + Embeddings
 faiss-cpu
 sentence-transformers
-streamlit
-pypdf
-ollama
-langchain-ollama
+huggingface-hub
+
+# Utilities
+python-dotenv
+requests
