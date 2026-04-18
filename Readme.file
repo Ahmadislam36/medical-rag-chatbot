@@ -5,6 +5,29 @@
 This project is a **Medical RAG (Retrieval-Augmented Generation) Chatbot** that provides medical information based on a structured dataset.
 It retrieves relevant medical context using a vector database and generates human-like responses using **Gemini 2.5 Flash**.
 
+There are 20 diseases/conditions in the list.
+Fever
+Cough
+Diabetes
+Hypertension
+Asthma
+Common Cold
+Flu (Influenza)
+COVID-19
+Headache
+Migraine
+Food Poisoning
+Diarrhea
+Vomiting
+Allergy
+Bronchitis
+Pneumonia
+Heart Attack
+Stroke
+Anxiety
+Depression
+
+make sure question about those diseases which are mention.
 ---
 ## 🚀 Features
 
